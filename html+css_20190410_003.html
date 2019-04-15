@@ -1,0 +1,39 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta 提供網頁的內容資訊回報給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="content-type" content="text/html;charset=big5">
+        
+        <!-- title 網頁分頁說明 -->
+        <title>test file</title>
+        <script>
+            // javascript
+        </script>        
+        <!-- 修飾的先後順序：元素內的樣式>頁面內的樣式>外部載入@import url或者link -->
+        <!-- 後設定>前設定。會覆蓋先前的樣式 -->
+        <!-- id> class。因為id具有不可重複性(指定單一元素樣式)，而class則是有重複性(指定數個元素相同樣是)。 -->
+        <!-- !important強制提高優先權，若是出現複數，則依照先後順序 -->
+        <style>
+            /* 定義CSS修飾_內部樣式表 */
+            p {color:blue; font-size:24px;}
+            /* 定義id選擇器(因為一個頁面同個id只允許一個，故不推薦用在修飾格式上) */
+            #mode1 {color:red; font-size:18px;}
+            /* 定義class選擇器(所有標籤元素都可以使用) */
+            .mode2 {color:yellow; font-size:14px;}
+            /* 定義class選擇器(特定標籤元素可以使用) */
+            p.mode3 {color:green; font-size:16px;}
+        </style>
+    </head>
+    <body>
+        <p>p標籤會受到css定義的修飾影響呈現</p>
+        <p id="mode1">p標籤也可以透過id指定定義過的修飾格式</p>
+        <h1 class="mode2">透過class可以使用指定的class修飾器</h1>
+        
+        <h1 class="mode3">mode3修飾僅允許給p標籤使用，故此行h1標籤不受影響</h1>
+        <p class="mode3">p標籤可以使用p.mode3進行修飾</p>
+    </body>
+</html>

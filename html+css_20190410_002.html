@@ -1,0 +1,33 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta 提供網頁的內容資訊給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- <meta http-equiv="content-type" content="text/html;charset=big5"> 指定網頁的語言格式 -->
+        
+        <!-- title 網頁分頁說明 -->
+        <title>test file</title>
+    </head>
+
+    <!-- 透過frameset進行版面分割就不需要body了-->
+    <!-- cols左右分割 rows上下分割 -->
+    <frameset cols="20%,*" frameborder=1 framespacing=5>
+            <frame src="a.htm" name="1">
+            <frameset rows="100,*" frameborder=1 framespacing=5>　
+                <frame src="b.htm" name="2">
+                <frame src="c.htm" name="3" frameborder=1 scrolling="auto" noresize marginhight=2 marginwidth=2> 
+            </frameset>
+    </frameset>
+
+    <!-- <a href="a.htm" target="c.html">在a.html按下連結但是在c.html顯示內容</a> -->
+    <!-- <a href="https://www.google.com/" target=_top>點下連結時初始化版面分割</a> -->
+    
+    <!-- 
+    背景掛上音樂
+    <bgsound src="music.mid"></bgsound>
+    <embed src="music.mid"> 
+    -->
+</html>

@@ -1,0 +1,58 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta 提供網頁的內容資訊給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- <meta http-equiv="content-type" content="text/html;charset=big5"> 指定網頁的語言格式 -->
+        
+        <!-- title 網頁分頁說明 -->
+        <title>test file</title>
+        
+        <script type= "text/javascript">
+            console.log('hello JS!');
+            var str= "Hello World!";
+            document.write("Javascript= ", str);    //顯示在瀏覽器上
+        </script>
+
+    </head>
+
+    <!-- body 建立背景圖片或是純色 -->
+    <body bgcolor="#ffffff" background="#./background.jpg" text="#000000" link="#0000ff" vlink="#ff00ff" alink="#ff0000>
+        <!-- 修改文字大小內定值 -->
+        <basefont size="3">
+
+        <!-- Ctrl+/ 可以將反白處轉為註解 -->
+        超連結設定
+        <a href="http://www.dlps.tc.edu.tw/html_teach/#" target= "_blank">
+            <p>HTML教學網站</p>
+        </a>
+        <!-- table是表格布局 from是 -->
+        <!-- entype設定編碼格式 action為發送往目標往指 method為HTTP方法 -->
+        <form enctype="utf-8" action="url" method="GET">
+            姓名：<input type="text" name="name" size="20"><br>
+            性別：
+            男<input type="radio" name="sex" value="boy">
+            女<input type="radio" name="sex" value="girl"><br>
+            喜好：
+            電影<input type="checkbox" name="movie" value="movie">
+            看書<input type="checkbox" name="book" value="book"><br>
+            你喜歡看書嗎??<select name="like">
+                <option value="喜歡">喜歡</option>
+                <option value="普通">普通</option>
+                <option value="討厭">討厭</option>
+            </select><br>
+            請輸入密碼：<input type="password" name="password"><br>
+            <input type="submit" value="送出資料">
+            <input type="reset" value="重新填寫"><br>
+            <!-- 按鈕有button, submit(發送至action的位置), reset三種 -->
+            <input type="button" name="button" value="我同意"><br>
+            隱藏欄位(程式需要但是不想要讓使用者看見的程式碼)
+            <input type="hidden" name="nosee" value="browser看不到這段字"><br>
+            請輸入你的意見：<br>
+            <textarea name="talk" cols="20" rows="3">請輸入...</textarea><br>
+        </form>
+    </body>
+</html>
