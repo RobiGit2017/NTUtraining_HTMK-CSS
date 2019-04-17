@@ -1,0 +1,116 @@
+/* css外部樣式表不能包含有任何HTML標籤語法 */
+/* 定義CSS修飾 */
+
+html{
+    height: 100%;
+    margin: 0; padding: 0;
+}
+
+.headBox {
+    background-color:#dfecca;
+}
+
+.bodyBox {
+    border:2px blue dashed;
+    background-color:#155c75;
+    /* background-color:#fff7e8; */
+    /* background-color:#dfecca; */
+    background-position:center;
+    /* background-image:url("./background.jpg"); */
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.floatBox {
+    /* border:3px red solid; */
+    float: left;
+    /* 若是下一層區塊要避免float影響，則需要設置clear:left */
+    width: 100px;
+    height: 100px;
+    background-color:burlywood;
+    padding: 3px;
+    
+    font-size: 12px;
+    line-height: 10px;
+    color:black;
+    text-align:center;
+    /* https://www.puritys.me/docs-blog/article-31-CSS-%E8%AA%9E%E6%B3%95%EF%BC%8C%E6%96%87%E5%AD%97%E6%8F%9B%E8%A1%8C%EF%BC%8C%E5%BC%B7%E8%BF%AB%E4%B8%8D%E6%8F%9B%E8%A1%8C%E3%80%82.html */
+    word-wrap: break-word;
+    white-space:pre-wrap;
+    /* word-break: break-all; */
+}
+
+.float_l {
+    float: left;
+    width: 33%;
+    border:1px red solid;
+}
+
+.float_r {
+    float: right;
+    width: 33%;
+    border:1px red solid;
+}
+
+.float_m {
+    max-width: 33%;
+    border:1px red solid;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.inlineBox {
+    /* border:3px greenyellow solid; */
+    display: inline;
+    background-color: slateblue;
+}
+
+.blockBox {
+    /* border:3px greenyellow solid; */
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #f899cdcc;
+}
+
+.inlineBlockBox {
+    display: inline-block;
+    background-color: slateblue;
+    margin:0px 3px;
+    position: relative; 
+    top:50%;
+    /* 校正成元素垂直置中(因為Top是以元素"左上角"做為位移的中心點) */
+    transform:translateY(-50%);
+}
+
+.flexBox {
+    display: flex;
+}
+
+.gridBox {
+    /* https://training.pada-x.com/docs/article.jsp?key=css-layout-float-inline-block-flex-grid
+    display: grid;
+    /* 網格區塊名稱 */
+    grid-template-areas:"main";
+    /* 網格區塊寬度 */
+    grid-template-columns: repect(3, 1fr);
+    /* 網格區塊高度 */
+    grid-template-rows:repect(1, 1fr);
+    /* 網格區塊左右間距 */
+    grid-column-gap:10px;
+    /* 網格區塊上下間距 */
+    grid-row-gap:10px;
+    /* grid-column：指定網格左右的位置，ex:＜start-line(起)＞ / ＜end-line(尾)＞ | span＜value＞ */
+    /* grid-row：指定網格上下的位置，ex:＜start-line(起)＞ / ＜end-line(尾)＞ | span＜value＞ */
+}
+
+.note {
+    /* 隱藏區塊內容同時也隱藏class的屬性效果 */
+    display: none;
+    /* 隱藏區塊內容但是保持class的屬性效果 */
+    visibility:hidden;
+}

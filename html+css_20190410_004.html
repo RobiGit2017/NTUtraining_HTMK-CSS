@@ -1,0 +1,38 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta 提供網頁的內容資訊回報給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="content-type" content="text/html;charset=big5">
+        
+        <!-- title 網頁分頁說明 -->
+        <title>test file</title>
+        <script>
+            // javascript
+        </script>        
+
+        <!-- 引用css外部樣式表 -->
+        <link rel="stylesheet" type="text/css" href="mystyle_2019040.css">
+    </head>
+    <body>
+        <p>p標籤會受到css定義的修飾影響呈現</p>
+        <p id="mode1">p標籤也可以透過id指定定義過的修飾格式</p>
+        <h1 class="mode2">透過class可以使用指定的class修飾器</h1>
+        
+        <h1 class="mode3">mode3修飾僅允許給p標籤使用，故此行h1標籤不受影響</h1>
+        <p class="mode3">p標籤可以使用p.mode3進行修飾</p>
+
+        <p style="color:sienna; margin-left:20p;">
+            這是一個內聯樣式表，透過標籤內使用style屬性來撰寫css語法，不推薦
+        </p>
+
+        注意!若是外部樣式表與內部樣式表同時存在，則相同的屬性項目會被內部樣式表給取代，
+        假若不存在於內部函式表，則會繼承下來使用。<br>
+        Inline style(內聯樣式) > Internal style sheet(內部樣式) >External style sheet(外部樣式) > 瀏覽器默認
+
+        <div>div創建區塊，現在多用於CSS修飾</div>
+    </body>
+</html>

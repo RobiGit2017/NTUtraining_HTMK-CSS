@@ -1,0 +1,87 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<!-- !doctype html 如此會觸發所有瀏覽器使用標準模式（甚至包含 Internet Explorer 6） -->
+<html>
+    <head>
+        <!-- title 網頁分頁說明、搜尋引擎標題 -->
+        <title>test file(25～30個中文字)</title>
+        
+        <!--meta 提供網頁的內容資訊回報給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="description" content="搜尋引擎標題下的簡述(65~80個中文字)">
+        <!-- viewport用來控制mobile device顯示網頁內容時的一些設定，CSS media query breakpoint也才會正常運作 -->
+        <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <!-- 以下兩種設定都可以防止使用者做畫面縮放，將畫面鎖在縮放比例 100% -->
+        <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        -->
+        
+        <!-- 引用css外部樣式表 -->
+        <link rel="stylesheet" type="text/css" href="mystyle_20190416.css">
+        <!-- 引用script外部檔案 -->
+        <script type="text/javascript" src=""></script>
+    
+    </head>
+    <body class="bodyBox">
+        
+        <div style="background-color: grey">
+            <span class="floatBox">Water and an Apple.</span>
+            <span style="word-wrap:break-word;">
+                Susan likes to eat apples.
+                She likes to eat big red apples.
+                She likes to wear a blue hat.
+                She wears a big blue hat on her head.
+                She wears a hat and eats an apple.
+                She drinks some water from a white cup.
+                Susan drinks water and eats apples.
+                She doesn't cut the apple with a knife.
+                A knife is sharp. She just eats the apple.
+                She holds the apple in her hand. She bites into the apple with her teeth.
+                She licks her lips. She drinks more water.
+                She wipes her mouth with her hand.
+            </span>
+        </div>
+        <hr style="clear:left">
+        <div class="blockBox">   
+            <span class="inlineBlockBox">Logo</span>
+            <span class="inlineBlockBox" style="float:right">
+                <span style="background-color: lavenderblush">我有一隻紅鯉魚與綠鯉魚與驢</span>
+                <span style="background-color: lavenderblush">有一天我回到家發現綠鯉魚不見</span>
+                <span style="background-color: lavenderblush">我趕緊騎著驢出門去找綠鯉魚</span>
+            </span>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="float_l">
+                <ul>
+                    左欄
+                    <li>1-1</li>
+                    <li>1-2</li>
+                    <li>1-3</li>
+                </ul>       
+            </div>
+            <div class="float_r">
+                <ul>
+                    右欄
+                    <li>2-1</li>
+                    <li>2-2</li>
+                    <li>2-3</li>
+                </ul>
+            </div>
+            <div class="float_m">
+                <ul>
+                    中欄
+                    <li>3-1</li>
+                    <li>3-2</li>
+                    <li>3-3</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="clear:left">
+        最末欄
+
+    </body>
+</html>

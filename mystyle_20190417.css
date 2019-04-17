@@ -1,0 +1,48 @@
+/* css外部樣式表不能包含有任何HTML標籤語法 */
+/* 定義CSS修飾 */
+
+html{
+    height: 100%;
+    margin: 0; padding: 0;
+}
+
+.headBox {
+    background-color:#dfecca;
+}
+
+.bodyBox {
+    border:2px blue dashed;
+    background-color:#155c75;
+    /* background-color:#fff7e8; */
+    /* background-color:#dfecca; */
+    background-position:center;
+    /* background-image:url("./background.jpg"); */
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.boxA {
+    display: inline-block;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    /* background-color: aquamarine; */
+    position: relative;
+    right: -50%;
+    transform: translateX(-50%)
+    
+}
+
+div> span {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    max-height: 40px;
+    background-color: #dfecca;
+    margin: 5px 0px;
+    
+    position: relative;
+    top:50%;
+    transform: translateY(50%-5px);
+    box-sizing: border-box;
+}

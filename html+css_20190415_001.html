@@ -1,0 +1,109 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<!-- !doctype html 如此會觸發所有瀏覽器使用標準模式（甚至包含 Internet Explorer 6） -->
+<html>
+    <head>
+        <!-- title 網頁分頁說明、搜尋引擎標題 -->
+        <title>test file(25～30個中文字)</title>
+        
+        <!--meta 提供網頁的內容資訊回報給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="description" content="搜尋引擎標題下的簡述(65~80個中文字)">
+        <!-- viewport用來控制mobile device顯示網頁內容時的一些設定，CSS media query breakpoint也才會正常運作 -->
+        <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <!-- 以下兩種設定都可以防止使用者做畫面縮放，將畫面鎖在縮放比例 100% -->
+        <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        -->
+
+        <meta http-equiv="content-type" content="text/html;charset=big5">
+        
+        <!-- 引用css外部樣式表 -->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        
+        <!-- 引用css內部樣式表 -->
+        <style>
+            body {background-color:#155c75;}
+            div {background-color:#fff7e8;}
+        </style>
+
+        <script>
+            // javascript
+        </script>
+    
+    </head>
+    <body>
+        <div>
+            <h3>測試用文章</h3>
+            This text is styled with some of the text formatting properties. 
+            The heading uses the text-align, text-transform, and color properties. 
+            The paragraph is indented, aligned, and the space between characters is specified. 
+            The underline is removed from the "嘗試一下" link.
+        </div>
+
+        <!-- div會受到h3標題修飾符號給區分開來 -->
+        <div>div創建區塊，現在多用於CSS修飾</div>
+        <hr>
+
+        <div>
+            <h3>標籤會受到css定義的修飾影響呈現</h3>
+            注意!若是外部樣式表與內部樣式表同時存在，則相同的屬性項目會被內部樣式表給取代，
+            假若不存在於內部函式表，則會繼承下來使用。<br>
+            Inline style(內聯樣式) > Internal style sheet(內部樣式) >External style sheet(外部樣式) > 瀏覽器默認<br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <td><li>1-1</li></td>
+                        <td><li>1-2</li></td>
+                        <td><li>1-3</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>2-1</li></td>
+                        <td><li>2-2</li></td>
+                        <td><li>2-3</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>1-1</li></td>
+                        <td><li>1-2</li></td>
+                        <td><li>1-3</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>2-1</li></td>
+                        <td><li>2-2</li></td>
+                        <td><li>2-3</li></td>
+                    </tr>
+
+                </table><br>
+            </div>
+            <div>
+                <form enctype="utf-8" action="url" method="GET">
+                    姓名：<input type="text" name="name" size="20"><br>
+                    性別：
+                    男<input type="radio" name="sex" value="boy">
+                    女<input type="radio" name="sex" value="girl"><br>
+                    喜好：
+                    電影<input type="checkbox" name="movie" value="movie">
+                    看書<input type="checkbox" name="book" value="book"><br>
+                    你喜歡看書嗎??<select name="like">
+                        <option value="喜歡">喜歡</option>
+                        <option value="普通">普通</option>
+                        <option value="討厭">討厭</option>
+                    </select><br>
+                    請輸入密碼：<input type="password" name="password"><br>
+                    <input type="submit" value="送出資料">
+                    <input type="reset" value="重新填寫"><br>
+                    <!-- 按鈕有button, submit(發送至action的位置), reset三種 -->
+                    <input type="button" name="button" value="我同意"><br>
+                    隱藏欄位(程式需要但是不想要讓使用者看見的程式碼)
+                    <input type="hidden" name="nosee" value="browser看不到這段字"><br>
+                    請輸入你的意見：<br>
+                    <textarea name="talk" cols="20" rows="3">請輸入...</textarea><br>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

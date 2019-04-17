@@ -1,0 +1,9 @@
+/* css外部樣式表不能包含有任何HTML標籤語法 */
+/* 定義CSS修飾 */
+p {color:blue; font-size:24px;}
+/* 定義id選擇器(因為一個頁面同個id只允許一個，故不推薦用在修飾格式上) */
+#mode1 {color:red; font-size:18px;}
+/* 定義class選擇器(所有標籤元素都可以使用) */
+.mode2 {color:yellow; font-size:14px;}
+/* 定義class選擇器(特定標籤元素可以使用) */
+p.mode3 {color:green; font-size:16px;}

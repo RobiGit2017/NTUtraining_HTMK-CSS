@@ -1,0 +1,310 @@
+<!-- HTML, PHP, Javaascript, CSS練習 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta 提供網頁的內容資訊給瀏覽器或存取網頁的服務使用，須寫在head區塊-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- <meta http-equiv="content-type" content="text/html;charset=big5"> 指定網頁的語言格式 -->
+        
+        <!-- title 網頁分頁說明 -->
+        <title>test file</title>
+        
+        <script type= "text/javascript">
+            console.log('hello JS!');
+            var str= "Hello World!";
+            document.write("Javascript= ", str);    //顯示在瀏覽器上
+        </script>
+
+    </head>
+
+    <!-- body 建立背景圖片或是純色 -->
+    <body bgcolor="#ffffff" background="#./background.jpg" text="#000000" link="#0000ff" vlink="#ff00ff" alink="#ff0000>
+        <!-- 修改文字大小內定值 -->
+        <basefont size="3">
+
+        <!-- Ctrl+/ 可以將反白處轉為註解 -->
+        超連結設定，參數target代表的是連節目標(對於frame尤其重要)
+        <a href="http://www.dlps.tc.edu.tw/html_teach/#" target= "_blank">
+            <p>HTML教學網站</p>
+        </a>
+        
+        <!-- 分隔線 -->
+        <hr size= 7>
+        <!-- br 換行 -->
+        Hello World!<br>
+        <!-- p 分段, 文字對齊 -->
+        <p align= "left">You are never too old to set another goal or to dream a new dream.</p>
+        <center>Don't be afraid of change.You may lose out on something good,but you might gain something even better.</center>
+
+        <!-- 保留原始語意排版 -->
+        <hr>
+        <pre>
+        保留
+            原始
+                語意
+                    排版
+        </pre>
+
+        <!-- 調整標題、字型大小 -->
+        <hr>
+        <h1>透過h1~h6做調整</h1>
+        <font size=4>也可以透過front size= 1~7調整</font><br>
+        <font size+=0>預設是size= 3</font>
+
+        <!-- 調整字體樣式 -->
+        <hr>
+        <u><i><b>粗體、斜體、底線</b></i></u><br>
+        <sup>上標</sup>
+        <sub>下標</sub><br>
+        
+        <font face= "Courier New">
+        <font color= "#ff0000">紅色#ff0000</font><br>
+        <font color= "#ff8000">橙色#ff8000</font><br>
+        <font color= "#ffff00">黃色#ffff00</font><br>
+        <font color= "#00ff00">綠色#00ff00</font><br>
+        <font color= "#0080ff">藍色#0080ff</font><br>
+        <font color= "#0000a0">靛色#0000a0</font><br>
+        <font color= "#8000ff">紫色#8000ff</font><br>
+        <font color= "#000000">黑色#000000</font><br>
+        <font color= "#c0c0c0">灰色#c0c0c0</font><br>
+        </font>
+
+        < > & " ' <br>
+        &lt; &nbsp; &gt; &amp; &quot;
+        
+        <!-- 插入圖片 -->
+        <hr>
+        <img src="./talk.png" alt="測試用圖片" height=32 width=32 hspace="15" vspace="15" align= "absmiddle" border="1">嗨！我是本站的模特兒喔！
+
+        <!-- 插入表格 -->
+        <hr size="7">
+        建立一個2*3的表額<br>
+        <table border="1">
+            <caption>表格標題</caption>
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td>1-1</td>
+                <td>1-2</td>
+                <td>1-3</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        合併1<br>
+        <table border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td>1-1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <table border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        合併2<br>
+        <table border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td>1-2</td>
+                <td>1-3</td>
+            </tr>
+            <tr>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+        
+        <table border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td rowspan="2">1</td>
+                <td>1-2</td>
+                <td>1-3</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <table border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td rowspan="2">1</td>
+                <td>1-2</td>
+                <td>1-3</td>
+            </tr>
+            <tr>
+                <!-- <td>2-1</td> -->
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <!-- 表格的對齊位置、大小 -->
+        <hr>
+        <table width= "200" high= "80" border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3"  align="center" valign="top">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+        
+        <!-- 表格顏色、框線顏色、欄距 -->
+        <table width= "100" high= "50" border="1" bgcolor="#FFCC33">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+ 
+        <table width= "100" high= "50" border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr bgcolor="#FFCC33">
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <table width= "100" high= "50" border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td bgcolor="#FFCC33">2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <table width= "100" high= "50" border="1">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3" bgcolor="./background.jpg">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <table width= "100" high= "50" border="5" bordercolor="#0080FF">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+
+        <table width= "100" high= "50" border="5" bordercolorlight="#0080FF" bordercolordark="#004B97">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+        表格內文距離格線的距離
+        <table width= "100" high= "50" border="5" cellpadding="4">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+        表格欄位格線之間的距離
+        <table width= "100" high= "50" border="5" cellspacing="0">
+            <!-- tr 先畫橫列，td 再畫直行 -->
+            <tr>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+            </tr>
+        </table><br>
+        <!-- 序列標籤 -->
+        <hr>
+        <table border="1">
+            <tr>
+                <td>
+                    <ul type="circle">
+                        <li>1-1</li>
+                        <li>1-2</li>
+                        <li>1-3</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul type="square">
+                        <li>2-1</li>
+                        <li>2-2</li>
+                        <li>2-3</li>
+                    </ul>                    
+                </td>
+                <td>
+                    <ol type="A">
+                        <li>2-1</li>
+                        <li>2-2</li>
+                        <li>2-3</li>
+                    </ol>                    
+                </td>
+                <td>
+                    <ol type="1">
+                        <li>2-1</li>
+                        <li>2-2</li>
+                        <li>2-3</li>
+                    </ol>                    
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
